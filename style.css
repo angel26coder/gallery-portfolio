@@ -3,11 +3,18 @@ body {
     width: 100%;
     border: 0px;
     margin: 0px;
+    box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+:root {
+    --main-color: rgb(8, 66, 104);
+    --secondary-color: rgb(0, 204, 240);
+    --main-text-color: white;
+}
+
 nav {
-    background-color: rgb(8, 66, 104);
+    background-color: var(--main-color);
     height: 30px;
     width: 100%;
 }
@@ -25,11 +32,61 @@ a {
 }
 
 .homeMainContainer {
-    background-color: rgb(0, 204, 240);
+    background-color: var(--secondary-color);
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 10px 0px 0px 0px;
+}
+
+.aboutMeMainContainer {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.aboutMeInfoContainer {
+    padding: 10px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#profilePhoto {
+    height: 190px;
+    border-radius: 80%;
+}
+
+.galleryMainContainer {
+    height: 50vh;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.contentContainer {
+    height: 50vh;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer {
+    padding: 20px;
+}
+
+.imagesContainer {
+    gap: 10px;
+    display: flex;
+
+}
+
+img {
+    height: 20vw;
+    border-radius: 10%;
 }
